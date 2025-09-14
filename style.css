@@ -1,0 +1,460 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: #00001D;
+}
+
+/* ------home-------- */
+#header-section {
+    width: 100%;
+    text-align: center;
+    height: 755px;
+    position: relative;
+    overflow: hidden;
+}
+
+#header-section::after {
+    content: "";
+    background-image: url("images/image1\ .png");
+    position: absolute;
+    top: 0;
+    /* left: 0; */
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 1072px 855px;
+    background-position: right center;
+    /* padding-left: 0%; */
+    opacity: 40%;
+    z-index: 1;
+    /* transform: translateX(50px); */
+    right: -50px;
+}
+
+#header-section::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: linear-gradient(135deg, #00001d, #000050,#00001D); */
+    background: linear-gradient(135deg, #00001d, #000050, #00001D);
+    z-index: 0;
+    opacity: 0.7;
+}
+
+#header-section h1 {
+    color: #1B80E9;
+    font-family: poppins, sans-serif;
+    font-size: 80px;
+    margin-top: 258px;
+    margin-left: 50px;
+    position: absolute;
+    z-index: 2;
+}
+
+#header-section span {
+    color: #FBFCFD;
+    margin-left: 400px;
+    position: relative;
+    top: 36px;
+}
+
+#header-section nav ul {
+    list-style: none;
+    position: relative;
+    z-index: 2;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    margin-right: 10px;
+}
+
+#header-section ul li {
+    display: inline-block;
+    margin-right: 60px;
+    color: #FBFCFD;
+    margin-top: 18px;
+    position: relative;
+    padding-top: 40px;
+    font-size: 18px;
+    font-family: 'poppins';
+    font-weight: 'regular';
+    z-index: 2;
+    padding-left: -10;
+    padding-right: -10;
+    /* cursor: pointer; */
+}
+
+#header-section ul li:hover {
+    font-weight: 600;
+    /* cursor: pointer; */
+}
+
+#header-section nav {
+    width: 100%;
+    height: 146px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+#header-section nav::before {
+    content: "";
+    background-color: rgba(0, 0, 55, 0.39);
+    backdrop-filter: blur(10px);
+    z-index: 2;
+    height: 146px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-blend-mode: overlay;
+
+}
+
+#header-section img {
+    margin-top: 26px;
+}
+
+
+
+/* -----solution--------- */
+
+#solution-card {
+    position: relative;
+    width: 341px;
+    height: 449px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Rectangle (main card) */
+#solution-card .rectangle {
+    background-color: #06115c;
+    /* dark blue */
+    width: 341px;
+    height: 449px;
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 120px;
+    /* space for circle */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+#solution-card .rectangle p {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* Circle (overlapping on top) */
+#solution-card .round {
+    position: absolute;
+    top: -80px;
+    /* overlap */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0a165a;
+    /* dark navy */
+    width: 162px;
+    height: 162px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#solution-card .round img {
+    width: 80px;
+    height: 80px;
+}
+
+#card-section {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0px;
+    padding-top: 80px;
+}
+
+#card-section .card {
+    margin-top: 30px;
+    margin: 0 40px;
+    position: relative;
+    z-index: 2;
+    /* Ensure cards are above the background */
+}
+
+#solution-section h2 {
+    color: #FBFCFD;
+    margin-left: 100px;
+    font-family: poppins, sans-serif;
+    font-weight: semi-bold;
+    font-size: 36px;
+    margin-top: 73px;
+    position: relative;
+
+}
+
+#img-soluId .img-solu {
+    height: 400px;
+    width: 400px;
+}
+
+/* --------poster---------- */
+
+#poster-section img {
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-bottom: 114px;
+    margin-top: 114px;
+}
+
+/* -------about-------- */
+#about-section .container {
+    width: 100%;
+    height: 911px;
+    position: relative;
+    background-color: rgba(0, 0, 80, 0.20);
+
+}
+
+/* #about-section .container::before{
+    content: "";
+    
+    z-index: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+} */
+#header-section img {
+    margin-top: 26px;
+    position: relative;
+    /* Add this */
+    z-index: 3;
+    /* Add this: higher than nav::before and ::after */
+}
+
+#about-section h2 {
+    color: #FBFCFD;
+    margin-left: 100px;
+    font-family: poppins, sans-serif;
+    font-weight: semi-bold;
+    font-size: 36px;
+    margin-top: 73px;
+    position: relative;
+}
+
+#about-section p {
+    color: #FBFCFD;
+    font-size: 18px;
+    padding: 30px 100px;
+    font-family: poppins, sans-serif;
+    line-height: 26px;
+    padding-top: 60px;
+}
+
+#about-section #img-person {
+    display: flex;
+    justify-content: center;
+    padding-top: 108px;
+
+}
+
+#about-section #img-person img {
+    position: relative;
+    padding: 0px 54px;
+
+}
+
+#post-section #post1 {
+    padding: 30px;
+    display: flex;
+    padding: 20px 100px;
+    background: linear-gradient(135deg, #00001D, #000050);
+    margin-right: 90px;
+
+}
+
+#post-section #post2 {
+    margin-top: 63px;
+    padding: 30px;
+    display: flex;
+    padding: 20px 100px;
+    background: linear-gradient(135deg, #00001D, #000050);
+    margin-right: 90px;
+
+}
+
+#post-section h3 {
+    color: #FBFCFD;
+    font-size: 36px;
+    margin-left: 100px;
+    font-family: poppins, sans-serif;
+}
+
+#post-section p {
+    color: #FBFCFD;
+    margin-top: 13px;
+    line-height: 20px;
+    font-size: 16px;
+    font-family: poppins, sans-serif;
+    margin-left: 100px;
+}
+
+#team-intro h3 {
+    color: #FBFCFD;
+    font-size: 64px;
+    font-family: poppins, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 55px;
+}
+
+/* ---------footer--------  */
+
+#footer-section {
+    bottom: 0;
+    width: 100%;
+    height: 400px;
+    background-color: #000050;
+    margin-top: 114px;
+    z-index: 100;
+}
+
+#footer-section .container {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+#footer-section li {
+    list-style: none;
+    color: #FBFCFD;
+    font-family: poppins, sans-serif;
+    line-height: 30px;
+}
+
+#footer-content {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer-section .col-2 {
+    padding: 0px 50px;
+}
+
+#footer-bottom {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#footer-bottom .col-3 {
+    display: flex;
+}
+
+#footer-bottom .col {
+    padding: 0px 50px;
+}
+
+#footer-bottom li {
+    margin-top: 30px;
+    padding-right: 10px;
+}
+
+#footer-bottom .logo-img {
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+#footer-bottom .logo-img img {
+    height: 20px;
+    width: 20px;
+}
+
+#company-logo img {
+    size: 20cap;
+}
+
+#footer-section h5 {
+    color: #FBFCFD;
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: poppins, sans-serif;
+    padding-bottom: 25px;
+}
+
+#footer-section .li {
+    margin-left: 28px;
+}
+
+
+@media(max-width : 480px) {
+
+    #header-section nav {
+        width: 30px;
+        height: 100rem;
+        position: fixed;
+        top: 0;
+        z-index: 3;
+        margin-left: 20px;
+    }
+
+    #header-section nav ul {
+        list-style: none;
+        position: relative;
+        z-index: 2;
+        justify-content: space-between;
+        display: inline;
+        width: 40px;
+        margin-right: 10px;
+    }
+
+    #header-section nav::before {
+        content: "";
+        background-color: rgba(0, 0, 55, 0.39);
+        backdrop-filter: blur(10px);
+        z-index: 2;
+        height: 100rem;
+        width: 100px;
+        position: absolute;
+        top: 0;
+        left: -10px;
+        background-blend-mode: overlay;
+
+    }
+    #header-section nav img {
+        width: 150px;
+        margin-left: -30px;
+    }
+
+    #header-section h1 {
+        font-size: 40px;
+        text-align: center;
+        word-break: break-word;
+        /* breaks long words nicely */
+        color: #1B80E9;
+        margin-left: -40px;
+        margin-top: 200px;
+        line-height: 1.3;
+    }
+
+    #header-section span {
+        color: #FBFCFD;
+
+    }
+}

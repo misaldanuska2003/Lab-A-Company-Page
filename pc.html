@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Card</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #02072d; /* dark navy */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .card {
+      position: relative;
+      background-color: #06115c; /* dark blue box */
+      padding: 100px 40px 60px;
+      border-radius: 20px;
+      text-align: center;
+      color: #ffffff;
+      width: 300px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+
+    .icon {
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 100px;
+      background-color: #0a165a; /* darker navy circle */
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .icon img {
+      width: 60px;
+      height: 60px;
+    }
+
+    .card p {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">
+      <!-- Replace with your icon -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Play_Arrow_logo.svg" alt="App Icon">
+    </div>
+    <p>Software & App<br>Solution</p>
+  </div>
+</body>
+</html>
