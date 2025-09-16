@@ -402,8 +402,7 @@ body {
     margin-left: 28px;
 }
 
-
-@media(max-width : 480px) {
+@media screen and (max-width : 480px) {
 
     #header-section nav {
         width: 30px;
@@ -446,7 +445,6 @@ body {
         font-size: 40px;
         text-align: center;
         word-break: break-word;
-        /* breaks long words nicely */
         color: #1B80E9;
         margin-left: -40px;
         margin-top: 200px;
@@ -455,6 +453,114 @@ body {
 
     #header-section span {
         color: #FBFCFD;
-
+        
     }
+#header-section::after {
+    content: "";
+    background-image: url("images/image1\ .png");
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 1072px 855px;
+    background-position: right center;
+    opacity: 40%;
+    z-index: 1;
+  
+}
+#header-section {
+   height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+    #header-section::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, #00001d, #000050, #00001D);
+    z-index: 0;
+    opacity: 0.7;
+
+}
+#about-section h2{
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+ #about-person .col-5{
+    flex-direction: column;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+ }
+
+ #about-person img{
+    margin: 20px 0px;
+    justify-content: center;
+    align-items: center;
+    display: inline;
+ }
+
+ #team-intro h3{
+    font-size: 26px;
+ }
+
+ #solution-section .row{
+    flex-direction: column;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+   
+ }
+
+#solution-section h2{
+    margin-bottom: 120px;
+    margin-left: 0px;
+    text-align: center;
+    font-size: 30px;
+ }
+
+#solution-section .card{
+    margin: 40px 0px;
+    
+}
+#solution-card .round{
+    top: -60px;
+    width: 130px;
+    height: 130px;
+}
+#solution-card .rectangle{
+    width: 280px;
+    height: 340px;
+    padding-top: 90px;}
+
+ #solution-section{
+    margin-top: 240%;
+ }
+
+#solution-section .col-4{
+    margin: 190px;
+    padding: 90px 80px;
+    justify-content: center;
+    align-items: center;
+    display: inline;
+}
+
+#poster-section img{
+    
+    height: 300px;
+    width: 340px;
+    margin: 50px 0px;
+    justify-content: center;
+    align-items: center;
+    display: inline;
+}
+
+
 }
